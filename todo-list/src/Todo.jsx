@@ -4,12 +4,12 @@ class Todo extends Component {
     render() {
         return (
             <div className='todo'>
-                <span>{this.props.title}</span>
+                <input type="text" name="" id="" disabled value={this.props.title}/>
                 <div className="buttons">
                     <button className='edit-todo'>
                         Edit
                     </button>
-                    <button className='remove-todo'>
+                    <button onClick={this.props.remove} className='remove-todo'>
                         Remove
                     </button>
                 </div>
